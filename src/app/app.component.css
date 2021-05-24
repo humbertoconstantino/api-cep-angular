@@ -1,0 +1,42 @@
+mat-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: #ecf0f1;
+    width: 300px;
+}
+mat-card button{
+    background-color: #f1c40f;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+#buscar{
+    margin-left: 1rem;
+}
+
+mat-toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+}
+
+body{
+    background-color: aqua;
+}
+mat-toolbar{
+    background-color: #f1c40f;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}

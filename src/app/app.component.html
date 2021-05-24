@@ -1,0 +1,40 @@
+
+<mat-toolbar class="mat-elevation-z2">
+  <span>Consulta de endereço</span>
+</mat-toolbar>
+<div class="container">
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Consulta de Endereço</mat-card-title>
+  </mat-card-header>
+  <form action="">
+    <mat-form-field appearance="fill">
+      <mat-label>CEP</mat-label>
+      <input id="cepNumber" autocomplete="off" name="cepNumber" [(ngModel)]="cepNumber" matInput>
+    </mat-form-field>
+  </form>
+  <mat-form-field appearance="fill">
+    <mat-label>Rua</mat-label>
+    <input [value]="andressUser.logradouro" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Bairro</mat-label>
+    <input [value]="andressUser.bairro" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Cidade</mat-label>
+    <input [value]="andressUser.localidade" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Estado</mat-label>
+    <input [value]="andressUser.uf" matInput>
+  </mat-form-field>
+  <div class="btn">
+  <button id="buscar" (click)="consultar()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+    <mat-icon>search</mat-icon>
+  </button>
+</div>
+</mat-card>
+</div>
+
+
